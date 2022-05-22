@@ -7,29 +7,29 @@
       <logicalFolder name="f1" displayName="config" projectFiles="true">
         <logicalFolder name="f1" displayName="sam_rh707_ek" projectFiles="true">
           <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
-            <logicalFolder name="f6" displayName="adc" projectFiles="true">
+            <logicalFolder name="f1" displayName="adc" projectFiles="true">
               <itemPath>../src/config/sam_rh707_ek/peripheral/adc/plib_adc.h</itemPath>
               <itemPath>../src/config/sam_rh707_ek/peripheral/adc/plib_adc_common.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f1" displayName="clk" projectFiles="true">
+            <logicalFolder name="f2" displayName="clk" projectFiles="true">
               <itemPath>../src/config/sam_rh707_ek/peripheral/clk/plib_clk.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f7" displayName="flexcom" projectFiles="true">
+            <logicalFolder name="f3" displayName="flexcom" projectFiles="true">
               <logicalFolder name="f1" displayName="usart" projectFiles="true">
                 <itemPath>../src/config/sam_rh707_ek/peripheral/flexcom/usart/plib_flexcom1_usart.h</itemPath>
                 <itemPath>../src/config/sam_rh707_ek/peripheral/flexcom/usart/plib_flexcom_usart_local.h</itemPath>
               </logicalFolder>
             </logicalFolder>
-            <logicalFolder name="f3" displayName="matrix" projectFiles="true">
+            <logicalFolder name="f4" displayName="matrix" projectFiles="true">
               <itemPath>../src/config/sam_rh707_ek/peripheral/matrix/plib_matrix.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f4" displayName="nvic" projectFiles="true">
+            <logicalFolder name="f5" displayName="nvic" projectFiles="true">
               <itemPath>../src/config/sam_rh707_ek/peripheral/nvic/plib_nvic.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f2" displayName="pio" projectFiles="true">
+            <logicalFolder name="f6" displayName="pio" projectFiles="true">
               <itemPath>../src/config/sam_rh707_ek/peripheral/pio/plib_pio.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f5" displayName="systick" projectFiles="true">
+            <logicalFolder name="f7" displayName="systick" projectFiles="true">
               <itemPath>../src/config/sam_rh707_ek/peripheral/systick/plib_systick.h</itemPath>
             </logicalFolder>
           </logicalFolder>
@@ -143,6 +143,25 @@
         </logicalFolder>
       </logicalFolder>
     </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="sam_rh707_ek.mhc" projectFiles="true">
+        <itemPath>../src/config/sam_rh707_ek/sam_rh707_ek.mhc/adc.yml</itemPath>
+        <itemPath>../src/config/sam_rh707_ek/sam_rh707_ek.mhc/cmsis.yml</itemPath>
+        <itemPath>../src/config/sam_rh707_ek/sam_rh707_ek.mhc/core.yml</itemPath>
+        <itemPath>../src/config/sam_rh707_ek/sam_rh707_ek.mhc/dfp.yml</itemPath>
+        <itemPath>../src/config/sam_rh707_ek/sam_rh707_ek.mhc/flexcom1.yml</itemPath>
+        <itemPath>../src/config/sam_rh707_ek/sam_rh707_ek.mhc/GraphSettings.yml</itemPath>
+        <itemPath>../src/config/sam_rh707_ek/sam_rh707_ek.mhc/project.yml</itemPath>
+        <itemPath>../src/config/sam_rh707_ek/sam_rh707_ek.mhc/settings.yml</itemPath>
+        <itemPath>../src/config/sam_rh707_ek/sam_rh707_ek.mhc/stdio.yml</itemPath>
+      </logicalFolder>
+      <itemPath>Makefile</itemPath>
+      <itemPath>../src/config/sam_rh707_ek/harmony-manifest-success.yml</itemPath>
+      <itemPath>../src/config/sam_rh707_ek/pin_configurations.csv</itemPath>
+      <itemPath>adc_polled_mode_sam_rh707_ek.mc3</itemPath>
+    </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
                    projectFiles="true">
@@ -157,32 +176,32 @@
                    projectFiles="true">
       <logicalFolder name="f1" displayName="config" projectFiles="true">
         <logicalFolder name="f1" displayName="sam_rh707_ek" projectFiles="true">
-          <logicalFolder name="f2" displayName="peripheral" projectFiles="true">
-            <logicalFolder name="f6" displayName="adc" projectFiles="true">
+          <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
+            <logicalFolder name="f1" displayName="adc" projectFiles="true">
               <itemPath>../src/config/sam_rh707_ek/peripheral/adc/plib_adc.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f1" displayName="clk" projectFiles="true">
+            <logicalFolder name="f2" displayName="clk" projectFiles="true">
               <itemPath>../src/config/sam_rh707_ek/peripheral/clk/plib_clk.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f7" displayName="flexcom" projectFiles="true">
+            <logicalFolder name="f3" displayName="flexcom" projectFiles="true">
               <logicalFolder name="f1" displayName="usart" projectFiles="true">
                 <itemPath>../src/config/sam_rh707_ek/peripheral/flexcom/usart/plib_flexcom1_usart.c</itemPath>
               </logicalFolder>
             </logicalFolder>
-            <logicalFolder name="f3" displayName="matrix" projectFiles="true">
+            <logicalFolder name="f4" displayName="matrix" projectFiles="true">
               <itemPath>../src/config/sam_rh707_ek/peripheral/matrix/plib_matrix.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f4" displayName="nvic" projectFiles="true">
+            <logicalFolder name="f5" displayName="nvic" projectFiles="true">
               <itemPath>../src/config/sam_rh707_ek/peripheral/nvic/plib_nvic.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f2" displayName="pio" projectFiles="true">
+            <logicalFolder name="f6" displayName="pio" projectFiles="true">
               <itemPath>../src/config/sam_rh707_ek/peripheral/pio/plib_pio.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f5" displayName="systick" projectFiles="true">
+            <logicalFolder name="f7" displayName="systick" projectFiles="true">
               <itemPath>../src/config/sam_rh707_ek/peripheral/systick/plib_systick.c</itemPath>
             </logicalFolder>
           </logicalFolder>
-          <logicalFolder name="f1" displayName="stdio" projectFiles="true">
+          <logicalFolder name="f2" displayName="stdio" projectFiles="true">
             <itemPath>../src/config/sam_rh707_ek/stdio/xc32_monitor.c</itemPath>
           </logicalFolder>
           <itemPath>../src/config/sam_rh707_ek/initialization.c</itemPath>
@@ -193,23 +212,6 @@
         </logicalFolder>
       </logicalFolder>
       <itemPath>../src/main.c</itemPath>
-    </logicalFolder>
-    <logicalFolder name="ExternalFiles"
-                   displayName="Important Files"
-                   projectFiles="false">
-      <logicalFolder name="f1" displayName="sam_rh707_ek.mhc" projectFiles="true">
-        <itemPath>../src/config/sam_rh707_ek/sam_rh707_ek.mhc/adc.yml</itemPath>
-        <itemPath>../src/config/sam_rh707_ek/sam_rh707_ek.mhc/cmsis.yml</itemPath>
-        <itemPath>../src/config/sam_rh707_ek/sam_rh707_ek.mhc/core.yml</itemPath>
-        <itemPath>../src/config/sam_rh707_ek/sam_rh707_ek.mhc/dfp.yml</itemPath>
-        <itemPath>../src/config/sam_rh707_ek/sam_rh707_ek.mhc/flexcom1.yml</itemPath>
-        <itemPath>../src/config/sam_rh707_ek/sam_rh707_ek.mhc/GraphSettings.yml</itemPath>
-        <itemPath>../src/config/sam_rh707_ek/sam_rh707_ek.mhc/project.yml</itemPath>
-        <itemPath>../src/config/sam_rh707_ek/sam_rh707_ek.mhc/settings.yml</itemPath>
-        <itemPath>../src/config/sam_rh707_ek/sam_rh707_ek.mhc/stdio.yml</itemPath>
-      </logicalFolder>
-      <itemPath>Makefile</itemPath>
-      <itemPath>../src/config/sam_rh707_ek/harmony-manifest-success.yml</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
@@ -225,12 +227,12 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>j32</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.00</languageToolchainVersion>
+        <languageToolchainVersion>4.10</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="SAMRH707_DFP" vendor="Microchip" version="1.0.28"/>
         <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
+        <pack name="SAMRH707_DFP" vendor="Microchip" version="1.0.28"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -286,6 +288,7 @@
       <C32>
         <property key="additional-warnings" value="true"/>
         <property key="addresss-attribute-use" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="enable-app-io" value="false"/>
         <property key="enable-omit-frame-pointer" value="false"/>
         <property key="enable-symbols" value="true"/>
@@ -342,6 +345,7 @@
         <property key="additional-options-use-response-files" value="false"/>
         <property key="additional-options-write-sla" value="false"/>
         <property key="allocate-dinit" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="code-dinit" value="false"/>
         <property key="ebase-addr" value=""/>
         <property key="enable-check-sections" value="false"/>
@@ -381,6 +385,7 @@
       <C32CPP>
         <property key="additional-warnings" value="false"/>
         <property key="addresss-attribute-use" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="check-new" value="false"/>
         <property key="eh-specs" value="true"/>
         <property key="enable-app-io" value="false"/>
@@ -409,6 +414,7 @@
         <property key="use-indirect-calls" value="false"/>
       </C32CPP>
       <C32Global>
+        <property key="appendMe" value=""/>
         <property key="common-include-directories" value=""/>
         <property key="gp-relative-option" value=""/>
         <property key="legacy-libc" value="false"/>
