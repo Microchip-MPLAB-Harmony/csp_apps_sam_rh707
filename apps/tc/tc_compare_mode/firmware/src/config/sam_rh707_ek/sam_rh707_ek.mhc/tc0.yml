@@ -46,15 +46,6 @@ children:
       children:
       - type: Dynamic
         attributes: {id: tc0, value: TC0_QuadratureStop}
-  - type: Comment
-    attributes: {id: TC0_CLK_ENABLE_COMMENT}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'false'}
   - type: Integer
     attributes: {id: TC0_CLOCK_FREQ}
     children:
@@ -282,15 +273,6 @@ children:
       children:
       - type: User
         attributes: {value: 'true'}
-  - type: Comment
-    attributes: {id: TC1_NVIC_ENABLE_COMMENT}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'false'}
   - type: Combo
     attributes: {id: TC1_OPERATING_MODE}
     children:
@@ -350,6 +332,47 @@ children:
         attributes: {id: visible}
         children:
         - {type: Value, value: 'false'}
+  - type: Integer
+    attributes: {id: TC2_CLOCK_FREQ}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: tc0, value: '0'}
+  - type: Comment
+    attributes: {id: TC2_Resolution}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'false'}
+  - type: Comment
+    attributes: {id: TC2_TIMER_PERIOD_CMT}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: text}
+        children:
+        - {type: Value, value: '****Period Count is 0****'}
+  - type: Long
+    attributes: {id: TC2_TIMER_PERIOD_COUNT}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: tc0, value: '0'}
+  - type: Float
+    attributes: {id: TC2_TIMER_PERIOD_MS}
+    children:
+    - type: Attributes
+      children:
+      - type: Float
+        attributes: {id: max}
+        children:
+        - {type: Value, value: '4.2949673E12'}
   - type: Integer
     attributes: {id: TC3_CLOCK_FREQ}
     children:

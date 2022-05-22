@@ -114,7 +114,7 @@ void TC0_CH0_ComparePeriodSet (uint32_t period)
 /* Read the period value */
 uint32_t TC0_CH0_ComparePeriodGet (void)
 {
-    return TC0_REGS->TC_CHANNEL[0].TC_RC;
+    return (uint32_t)TC0_REGS->TC_CHANNEL[0].TC_RC;
 }
 
 /* Set the compare A value */
@@ -192,7 +192,7 @@ void TC0_CH1_ComparePeriodSet (uint32_t period)
 /* Read the period value */
 uint32_t TC0_CH1_ComparePeriodGet (void)
 {
-    return TC0_REGS->TC_CHANNEL[1].TC_RC;
+    return (uint32_t)TC0_REGS->TC_CHANNEL[1].TC_RC;
 }
 
 /* Set the compare A value */
