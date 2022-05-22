@@ -248,7 +248,7 @@ SECTIONS
     {
     . = ALIGN(4);
     _s_ram_nocache = .;
-    *(.ram_nocache)
+    *(.ram_nocache .ram_nocache.*)
     . = ALIGN(4);
     _e_ram_nocache = .;
     } > ram_nocache
