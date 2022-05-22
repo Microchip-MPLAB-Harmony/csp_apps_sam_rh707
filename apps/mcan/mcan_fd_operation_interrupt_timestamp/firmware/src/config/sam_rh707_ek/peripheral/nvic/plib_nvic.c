@@ -62,7 +62,13 @@ void NVIC_Initialize( void )
     NVIC_SetPriority(MCAN0_INT0_IRQn, 7);
     NVIC_EnableIRQ(MCAN0_INT0_IRQn);
 
+    /* Enable Usage fault */
+    SCB->SHCSR |= (SCB_SHCSR_USGFAULTENA_Msk);
+    /* Trap divide by zero */
+    SCB->CCR   |= SCB_CCR_DIV_0_TRP_Msk;
 
+    /* Enable Bus fault */
+    SCB->SHCSR |= (SCB_SHCSR_BUSFAULTENA_Msk);
 
 }
 
