@@ -52,7 +52,7 @@ void DACC_Initialize(void)
     /* Reset DACC Peripheral */
     DACC_REGS->DACC_CR = DACC_CR_SWRST_Msk;
 
-    DACC_REGS->DACC_MR = DACC_MR_STARTUP(0x8) | DACC_MR_ONE_Msk;
+    DACC_REGS->DACC_MR = DACC_MR_STARTUP(0x8U) | DACC_MR_ONE_Msk;
 
     /* Enable DAC Channel */
     DACC_REGS->DACC_CHER = DACC_CHER_CH0_Msk;
@@ -65,7 +65,7 @@ bool DACC_IsReady(void)
 
 void DACC_ChannelSelect(DACC_CHANNEL_NUM channel)
 {
-    DACC_REGS->DACC_MR = (DACC_REGS->DACC_MR & ~DACC_MR_USER_SEL_Msk) | DACC_MR_USER_SEL(channel);
+    DACC_REGS->DACC_MR = (DACC_REGS->DACC_MR & ~DACC_MR_USER_SEL_Msk) | DACC_MR_USER_SEL((uint32_t)channel);
 }
 
 void DACC_DataWrite(uint16_t data)
