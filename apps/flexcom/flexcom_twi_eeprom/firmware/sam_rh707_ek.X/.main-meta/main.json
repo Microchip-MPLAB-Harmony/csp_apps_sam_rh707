@@ -1,0 +1,83 @@
+{
+	"metaDataVersion": "1.0.0",
+	"category": "com.microchip.ide.project",
+	"content": {
+		"metaDataVersion": "1.1.0",
+		"name": "com.microchip.mcu32.mplabx.project.csp_apps_sam_rh707_flexcom_twi_eeprom",
+		"version": "3.2.0",
+		"displayName": "FLEXCOM TWI (I2C) EEPROM Example for SAM RH707 Family",
+		"projectName": "flexcom_twi_eeprom_sam_rh707_ek",
+		"shortDescription": "This example application shows how to use the flexcom module in TWI mode.",
+		"ide": {
+			"name": "MPLABX",
+			"semverRange": ">=6.0.0"
+		},
+		"compiler": [
+			{
+				"name": "XC32",
+				"semverRange": ">=4.1.0"
+			}
+		],
+		"dfp": {
+			"name": "CMSIS",
+			"semverRange": "^5.4.0"
+		},
+		"configurator": {
+			"name": "MHC",
+			"semverRange": ">=3.8.0"
+		},
+		"device": {
+			"metaDataVersion": "1.0.0",
+			"category": "com.microchip.portal.contentRef",
+			"content": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.device",
+				"name": "ATSAMRH707F18A",
+				"versionRange": "*"
+			}
+		},
+		"author": "Microchip",
+		"subcategories": [
+			[
+				"Development Kit",
+				"SAM RH707 Evaluation Kit"
+			],
+			[
+				"Harmony",
+				"Peripherals",
+				"FLEXCOM"
+			],
+			[
+				"Peripherals",
+				"FLEXCOM"
+			]
+		],
+		"peripherals": [
+			"FLEXCOM"
+		],
+		"keywords": [
+			"MHC",
+			"Harmony",
+			"ATSAMRH707F18A",
+			"SAM RH707 Family",
+			"FLEXCOM",
+			"Serial Communication",
+			"I2C",
+			"SPI",
+			"UART",
+			"SERCOM",
+			"TWI"
+		],
+		"additionalData": {
+			"longDescription": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.portal.fileRef",
+				"content": {
+					"metaDataVersion": "1.0.0",
+					"fileName": "./../../readme.md",
+					"mimeType": "text/markdown"
+				}
+			}
+		}
+	}
+}
