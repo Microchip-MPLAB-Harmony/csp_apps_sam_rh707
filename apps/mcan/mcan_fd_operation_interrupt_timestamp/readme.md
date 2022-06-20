@@ -26,7 +26,7 @@ To build the application, refer to the following table and open the project usin
 
 | Project Name      | Description                                    |
 | ----------------- | ---------------------------------------------- |
-| sam_rh707_ek.X | MPLABX project for SAM RH707 Evaluation Kit |
+| sam_rh707_ek.X | MPLABX project for [SAM RH707 Evaluation Kit](https://www.microchip.com/en-us/development-tool/SAMRH707F18-EK) |
 |||
 
 ## Setting up the hardware
@@ -35,12 +35,12 @@ The following table shows the target hardware for the application projects.
 
 | Project Name| Board|
 |:---------|:---------:|
-| sam_rh707_ek.X | SAM RH707 Evaluation Kit
+| sam_rh707_ek.X | [SAM RH707 Evaluation Kit](https://www.microchip.com/en-us/development-tool/SAMRH707F18-EK)
 |||
 
-### Setting up SAM RH707 Evaluation Kit
+### Setting up [SAM RH707 Evaluation Kit](https://www.microchip.com/en-us/development-tool/SAMRH707F18-EK)
 
-- Connect SAM RH707 Evaluation Kit to anotherSAM RH707 Evaluation Kit as per the pin connections shown below
+- Connect [SAM RH707 Evaluation Kit](https://www.microchip.com/en-us/development-tool/SAMRH707F18-EK) to another[SAM RH707 Evaluation Kit](https://www.microchip.com/en-us/development-tool/SAMRH707F18-EK) as per the pin connections shown below
 
 | SAMRH707 EK - 1   | SAMRH707 EK - 2    |
 | ----------------- | ------------------ |

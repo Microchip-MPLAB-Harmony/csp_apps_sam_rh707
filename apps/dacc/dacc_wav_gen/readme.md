@@ -26,7 +26,7 @@ To build the application, refer to the following table and open the project usin
 
 | Project Name      | Description                                    |
 | ----------------- | ---------------------------------------------- |
-| sam_rh707_ek.X    | MPLABX project for SAM RH707 Evaluation Kit()  |
+| sam_rh707_ek.X    | MPLABX project for [SAM RH707 Evaluation Kit](https://www.microchip.com/en-us/development-tool/SAMRH707F18-EK)  |
 |||
 
 ## Setting up the hardware
@@ -35,10 +35,10 @@ The following table shows the target hardware for the application projects.
 
 | Project Name| Board|
 |:---------|:---------:|
-| sam_rh707_ek.X | SAM RH707 Evaluation Kit() |
+| sam_rh707_ek.X | [SAM RH707 Evaluation Kit](https://www.microchip.com/en-us/development-tool/SAMRH707F18-EK) |
 |||
 
-### Setting up SAM RH707 Evaluation Kit
+### Setting up [SAM RH707 Evaluation Kit](https://www.microchip.com/en-us/development-tool/SAMRH707F18-EK)
 
 - Connect the DACC "Channel 0" output pin to oscilloscope probe for observing the analog output waveform
   - DACC Channel 0 is available through DAC0 SMB connector
@@ -53,5 +53,5 @@ The following table shows the target hardware for the application projects.
 
 | Board      | DACC output pins |
 | ----------------- | ---------------------------------------------- |
-| [SAM RH707 Evaluation Kit]()    | DAC0 SMB connector |
+| [[SAM RH707 Evaluation Kit](https://www.microchip.com/en-us/development-tool/SAMRH707F18-EK)]()    | DAC0 SMB connector |
 |||

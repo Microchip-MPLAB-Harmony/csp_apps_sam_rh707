@@ -31,7 +31,7 @@ To build the application, refer to the following table and open the project usin
 
 | Project Name      | Description                                    |
 | ----------------- | ---------------------------------------------- |
-| sam_rh707_ek.X | MPLABX project for SAM RH707 Evaluation Kit |
+| sam_rh707_ek.X | MPLABX project for [SAM RH707 Evaluation Kit](https://www.microchip.com/en-us/development-tool/SAMRH707F18-EK) |
 |||
 
 ## Setting up the hardware
@@ -40,10 +40,10 @@ The following table shows the target hardware for the application projects.
 
 | Project Name| Board|
 |:---------|:---------:|
-| sam_rh707_ek.X | SAM RH707 Evaluation Kit
+| sam_rh707_ek.X | [SAM RH707 Evaluation Kit](https://www.microchip.com/en-us/development-tool/SAMRH707F18-EK)
 |||
 
-### Setting up SAM RH707 Evaluation Kit
+### Setting up [SAM RH707 Evaluation Kit](https://www.microchip.com/en-us/development-tool/SAMRH707F18-EK)
 
 - Connect the Debug USB port on the board to the computer using a micro USB cable
 - Connect the debugger probe to J5 connector
@@ -68,5 +68,5 @@ The following table shows the target hardware for the application projects.
 
 | Board      | LED Name  |
 | ---------- | --------- |
-| SAM RH707 Evaluation Kit |LED0 |
+| [SAM RH707 Evaluation Kit](https://www.microchip.com/en-us/development-tool/SAMRH707F18-EK) |LED0 |
 |||

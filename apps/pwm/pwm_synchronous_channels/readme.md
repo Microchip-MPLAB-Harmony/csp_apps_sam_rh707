@@ -26,7 +26,7 @@ To build the application, refer to the following table and open the project usin
 
 | Project Name      | Description                                    |
 | ----------------- | ---------------------------------------------- |
-| sam_rh707_ek.X | MPLABX project for SAM RH707 Evaluation Kit |
+| sam_rh707_ek.X | MPLABX project for [SAM RH707 Evaluation Kit](https://www.microchip.com/en-us/development-tool/SAMRH707F18-EK) |
 |||
 
 ## Setting up the hardware
@@ -35,10 +35,10 @@ The following table shows the target hardware for the application projects.
 
 | Project Name| Board|
 |:---------|:---------:|
-| sam_rh707_ek.X | SAM RH707 Evaluation Kit
+| sam_rh707_ek.X | [SAM RH707 Evaluation Kit](https://www.microchip.com/en-us/development-tool/SAMRH707F18-EK)
 |||
 
-### Setting up SAM RH707 Evaluation Kit
+### Setting up [SAM RH707 Evaluation Kit](https://www.microchip.com/en-us/development-tool/SAMRH707F18-EK)
 
 - Connect the debugger probe to J5 connector
 - Connect the J1 (USB-C) port on the board to the computer using a USB-C cable
@@ -53,7 +53,7 @@ The following table shows the target hardware for the application projects.
 
 Refer to the below table for PWM output pins for different boards:
 
-| PWM Channel      | SAM RH707 Evaluation Kit |
+| PWM Channel      | [SAM RH707 Evaluation Kit](https://www.microchip.com/en-us/development-tool/SAMRH707F18-EK) |
 | ---------|---------------------- |
 | CH0_PWMH | PB11 (Pin 7 of J19 )  |
 | CH0_PWML | PB12 (Pin 8 of J19 )  |

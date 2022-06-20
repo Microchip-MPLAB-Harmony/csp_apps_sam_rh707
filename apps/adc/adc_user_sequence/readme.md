@@ -17,7 +17,7 @@ Conversion of the three analog inputs is triggered from software trigger at ever
 
 | Board | Sequence of conversion |
 | ----- | ---------------------- |
-| [SAM RH707 Evaluation Kit]() |  AD1 --> AD15 --> AD0 |
+| [[SAM RH707 Evaluation Kit](https://www.microchip.com/en-us/development-tool/SAMRH707F18-EK)]() |  AD1 --> AD15 --> AD0 |
 |||
 
 Analog input voltage in the range of 0 V to 3.3 V is fed to the ADC input channel AD0, AD1 and AD15 (from potentiometer). ADC conversion result is displayed on the console.
@@ -33,7 +33,7 @@ To build the application, refer to the following table and open the project usin
 
 | Project Name      | Description                                    |
 | ----------------- | ---------------------------------------------- |
-| sam_rh707_ek.X | MPLABX project for SAM RH707 Evaluation Kit() |
+| sam_rh707_ek.X | MPLABX project for [SAM RH707 Evaluation Kit](https://www.microchip.com/en-us/development-tool/SAMRH707F18-EK) |
 |||
 
 ## Setting up the hardware
@@ -42,10 +42,10 @@ The following table shows the target hardware for the application projects.
 
 | Project Name| Board|
 |:---------|:---------:|
-| sam_rh707_ek.X | SAM RH707 Evaluation Kit() |
+| sam_rh707_ek.X | [SAM RH707 Evaluation Kit](https://www.microchip.com/en-us/development-tool/SAMRH707F18-EK) |
 |||
 
-### Setting up SAM RH707 Evaluation Kit
+### Setting up [SAM RH707 Evaluation Kit](https://www.microchip.com/en-us/development-tool/SAMRH707F18-EK)
 
 - Connect the Debug USB port on the board to the computer using a micro USB cable
 - Connect the debugger probe to J5 connector
