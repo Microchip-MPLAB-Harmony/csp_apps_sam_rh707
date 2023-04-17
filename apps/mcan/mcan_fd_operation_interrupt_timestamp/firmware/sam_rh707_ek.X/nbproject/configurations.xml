@@ -222,14 +222,14 @@
         <targetDevice>ATSAMRH707F18A</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>j32</platformTool>
+        <platformTool>pkob4hybrid</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.00</languageToolchainVersion>
+        <languageToolchainVersion>4.21</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
         <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
-        <pack name="SAMRH707_DFP" vendor="Microchip" version="1.0.28"/>
+        <pack name="SAMRH707_DFP" vendor="Microchip" version="1.1.43"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
