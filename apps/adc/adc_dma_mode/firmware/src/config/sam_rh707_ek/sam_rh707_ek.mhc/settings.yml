@@ -1,0 +1,14 @@
+format_version: v1.0
+configName: sam_rh707_ek
+folderName: adc_dma_mode_sam_rh707_ek
+frameworkPath: ..\..\..\..
+processor: ATSAMRH707F18A
+projectName: adc_dma_mode_sam_rh707_ek
+settings:
+  PackageFilter: ''
+  FORCE_OPTIMIZATION: 'false'
+  GENERATE_BACKUP: 'true'
+  TRUSTZONE: 'false'
+  CMSISPath: dev_packs\arm\CMSIS\5.8.0
+  MERGE_STRATEGY: USER_ALL
+  DFPPath: dev_packs\Microchip\SAMRH707_DFP\1.2.156\atdf\ATSAMRH707F18A.atdf

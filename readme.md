@@ -38,6 +38,7 @@ The following applications are provided to demonstrate the typical or interestin
 | Name | Description |
 | ---- | ----------- |
 | [ADC Polling](apps/adc/adc_polled_mode/readme.md) | This example application shows how to sample an analog input in polled mode and send the converted data to console |
+| [ADC DMA](apps/adc/adc_dma_mode/readme.md) | This example application how to couple the ADC and the XDMAC peripherals to automatically transfer the data conversion of an analog input into the internal memory |
 | [ADC user sequence](apps/adc/adc_user_sequence/readme.md) | This example application shows how to sample three analog inputs using the user sequencer in software trigger mode and send the converted data to the console |
 | [Cache maintenance](apps/cache/cache_maintenance/readme.md) | This example shows cache maintenance operation by cleaning and invalidating the cache for the DMA buffers located in the cacheable SRAM region |
 | [Clock configuration](apps/clock/clock_config/readme.md) | This example application shows how to configure the clock system to run the device at maximum frequency. It also outputs a prescaled clock signal on a GPIO pin for measurement and verification |
