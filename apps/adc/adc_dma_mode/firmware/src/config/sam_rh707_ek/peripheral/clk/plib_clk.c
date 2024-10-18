@@ -49,6 +49,8 @@ static bool checkGpnvmWordCrc(void)
 
     /* Read GPNVM bits */
     HEFC_REGS->HEFC_FCR = (HEFC_FCR_FKEY(0x5AU) | HEFC_FCR_FCMD_GGPB);
+    __DSB();
+    __ISB();
     while ((HEFC_REGS-> HEFC_FSR & HEFC_FSR_FRDY_Msk) != HEFC_FSR_FRDY_Msk)
     {
         /* Waiting for the HEFC Ready state */
@@ -96,55 +98,6 @@ static bool checkGpnvmWordCrc(void)
         crc_valid = true;
     }
     return crc_valid;
-}
-static void rcTrimCalibrationSequence(void)
-{
-    /* Configure the RC Oscillator frequency to select 4MHz */
-    PMC_REGS->CKGR_MOR = (PMC_REGS->CKGR_MOR & ~CKGR_MOR_MOSCRCF_Msk) | CKGR_MOR_KEY_PASSWD | CKGR_MOR_MOSCRCF_4_MHz;
-
-    /* Wait until the RC oscillator clock is ready */
-    while( (PMC_REGS->PMC_SR & PMC_SR_MOSCRCS_Msk) != PMC_SR_MOSCRCS_Msk)
-    {
-        /* Wait for the RC oscillator clock is ready */
-    }
-
-    __DSB();
-    __ISB();
-
-    /* Set SEL for 8/10/12 MHz */
-    PMC_REGS->PMC_OCR1 |= (PMC_OCR1_SEL8_Msk | PMC_OCR1_SEL10_Msk | PMC_OCR1_SEL12_Msk);
-
-    /* Set Calib values for 8/10/12 MHz */
-    PMC_REGS->PMC_OSC2 = (PMC_REGS->PMC_OSC2 | CKGR_MOR_KEY_PASSWD) | PMC_OSC2_EN_WR_CALIB_Msk;
-    PMC_REGS->PMC_OCR1 = (PMC_REGS->PMC_OCR1 & ~(PMC_OCR1_CAL8_Msk | PMC_OCR1_CAL10_Msk | PMC_OCR1_CAL12_Msk) ) | \
-                         PMC_OCR1_CAL8(calibValue) | PMC_OCR1_CAL10(calibValue) | PMC_OCR1_CAL12(calibValue);
-    PMC_REGS->PMC_OSC2 = (PMC_REGS->PMC_OSC2 | CKGR_MOR_KEY_PASSWD) & (~PMC_OSC2_EN_WR_CALIB_Msk);
-
-    __DSB();
-    __ISB();
-
-    /* Configure the RC Oscillator frequency to select 8MHz */
-    PMC_REGS->CKGR_MOR = (PMC_REGS->CKGR_MOR & ~CKGR_MOR_MOSCRCF_Msk) | CKGR_MOR_KEY_PASSWD | CKGR_MOR_MOSCRCF_8_MHz;
-
-    /* Wait until the RC oscillator clock is ready */
-    while( (PMC_REGS->PMC_SR & PMC_SR_MOSCRCS_Msk) != PMC_SR_MOSCRCS_Msk)
-    {
-        /* Wait until the RC oscillator clock is ready */
-    }
-
-    __DSB();
-    __ISB();
-
-    /* Set SEL for 4 MHz */
-    PMC_REGS->PMC_OCR1 |= PMC_OCR1_SEL4_Msk;
-
-    /* Set Calib values for 4 MHz */
-    PMC_REGS->PMC_OSC2 = (PMC_REGS->PMC_OSC2 | CKGR_MOR_KEY_PASSWD) | PMC_OSC2_EN_WR_CALIB_Msk;
-    PMC_REGS->PMC_OCR1 = (PMC_REGS->PMC_OCR1 & ~(PMC_OCR1_CAL4_Msk)) | PMC_OCR1_CAL4(calibValue);
-    PMC_REGS->PMC_OSC2 = (PMC_REGS->PMC_OSC2 | CKGR_MOR_KEY_PASSWD) & (~PMC_OSC2_EN_WR_CALIB_Msk);
-
-    __DSB();
-    __ISB();
 }
 static void rc2ckTrimCalibrationSequence(void)
 {
@@ -195,31 +148,20 @@ Initialize Main Clock (MAINCK)
 *********************************************************************************/
 static void CLK_MainClockInitialize(void)
 {
-    /* Enable the RC Oscillator */
-    PMC_REGS->CKGR_MOR|= CKGR_MOR_KEY_PASSWD | CKGR_MOR_MOSCRCEN_Msk;
+    /* Enable External Clock Signal on XIN pin */
+    PMC_REGS->CKGR_MOR |= CKGR_MOR_MOSCXTEN_Msk | CKGR_MOR_KEY_PASSWD;
 
-    /* Wait until the RC oscillator clock is ready. */
-    while( (PMC_REGS->PMC_SR & PMC_SR_MOSCRCS_Msk) != PMC_SR_MOSCRCS_Msk)
+    /* External clock signal (XIN pin) is selected as the Main Clock (MAINCK) source.
+       Switch Main Clock (MAINCK) to External signal on XIN pin */
+    PMC_REGS->CKGR_MOR |= CKGR_MOR_KEY_PASSWD | CKGR_MOR_MOSCSEL_Msk;
+
+    while ( (PMC_REGS->PMC_SR & PMC_SR_MOSCSELS_Msk) != PMC_SR_MOSCSELS_Msk)
     {
-
+        /* Wait until MAINCK is switched to External Clock Signal (XIN pin) */
     }
 
-    if (checkGpnvmWordCrc())
-    {
-        rcTrimCalibrationSequence();
-    }
-    /* Configure the RC Oscillator frequency */
-    PMC_REGS->CKGR_MOR = (PMC_REGS->CKGR_MOR & ~CKGR_MOR_MOSCRCF_Msk) | CKGR_MOR_KEY_PASSWD | CKGR_MOR_MOSCRCF_10_MHz;
-
-    /* Wait until the RC oscillator clock is ready */
-    while( (PMC_REGS->PMC_SR & PMC_SR_MOSCRCS_Msk) != PMC_SR_MOSCRCS_Msk)
-    {
-
-    }
-
-    /* Main RC Oscillator is selected as the Main Clock (MAINCK) source.
-       Switch Main Clock (MAINCK) to the RC Oscillator clock */
-    PMC_REGS->CKGR_MOR = (PMC_REGS->CKGR_MOR & ~CKGR_MOR_MOSCSEL_Msk) | CKGR_MOR_KEY_PASSWD;
+    /* Disable the RC Oscillator */
+    PMC_REGS->CKGR_MOR = CKGR_MOR_KEY_PASSWD | (PMC_REGS->CKGR_MOR & ~CKGR_MOR_MOSCRCEN_Msk);
 
 
     while ((PMC_REGS->PMC_SR & PMC_SR_MCKRDY_Msk) != PMC_SR_MCKRDY_Msk)
@@ -235,7 +177,7 @@ Initialize RC2 Clock (RC2CK)
 static void CLK_RC2ClockInitialize(void)
 {
     PMC_REGS->PMC_OSC2 |= PMC_OSC2_EN_Msk | PMC_OSC2_KEY_PASSWD;
-    if (crc_valid)
+    if (checkGpnvmWordCrc())
     {
         rc2ckTrimCalibrationSequence();
     }
