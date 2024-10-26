@@ -139,15 +139,6 @@
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="true">
-      <logicalFolder name="f1" displayName="sam_rh707_ek.mhc" projectFiles="true">
-        <itemPath>../src/config/sam_rh707_ek/sam_rh707_ek.mhc/cmsis.yml</itemPath>
-        <itemPath>../src/config/sam_rh707_ek/sam_rh707_ek.mhc/core.yml</itemPath>
-        <itemPath>../src/config/sam_rh707_ek/sam_rh707_ek.mhc/dfp.yml</itemPath>
-        <itemPath>../src/config/sam_rh707_ek/sam_rh707_ek.mhc/flexcom1.yml</itemPath>
-        <itemPath>../src/config/sam_rh707_ek/sam_rh707_ek.mhc/GraphSettings.yml</itemPath>
-        <itemPath>../src/config/sam_rh707_ek/sam_rh707_ek.mhc/project.yml</itemPath>
-        <itemPath>../src/config/sam_rh707_ek/sam_rh707_ek.mhc/settings.yml</itemPath>
-      </logicalFolder>
       <itemPath>Makefile</itemPath>
       <itemPath>../src/config/sam_rh707_ek/harmony-manifest-success.yml</itemPath>
       <itemPath>../src/config/sam_rh707_ek/pin_configurations.csv</itemPath>
