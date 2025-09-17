@@ -143,10 +143,20 @@
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="true">
+      <logicalFolder name="mcan_fd_operation_interrupt_timestamp_sam_rh707_ek_sam_rh707_ek" displayName="mcan_fd_operation_interrupt_timestamp_sam_rh707_ek_sam_rh707_ek" projectFiles="true">
+        <itemPath>mcan_fd_operation_interrupt_timestamp_sam_rh707_ek_sam_rh707_ek/mcc-config.mc4</itemPath>
+        <logicalFolder name="components" displayName="components" projectFiles="true">
+          <itemPath>mcan_fd_operation_interrupt_timestamp_sam_rh707_ek_sam_rh707_ek/components/cmsis.yml</itemPath>
+          <itemPath>mcan_fd_operation_interrupt_timestamp_sam_rh707_ek_sam_rh707_ek/components/core.yml</itemPath>
+          <itemPath>mcan_fd_operation_interrupt_timestamp_sam_rh707_ek_sam_rh707_ek/components/dfp.yml</itemPath>
+          <itemPath>mcan_fd_operation_interrupt_timestamp_sam_rh707_ek_sam_rh707_ek/components/flexcom1.yml</itemPath>
+          <itemPath>mcan_fd_operation_interrupt_timestamp_sam_rh707_ek_sam_rh707_ek/components/mcan0.yml</itemPath>
+          <itemPath>mcan_fd_operation_interrupt_timestamp_sam_rh707_ek_sam_rh707_ek/components/stdio.yml</itemPath>
+        </logicalFolder>
+      </logicalFolder>
       <itemPath>Makefile</itemPath>
       <itemPath>../src/config/sam_rh707_ek/harmony-manifest-success.yml</itemPath>
       <itemPath>../src/config/sam_rh707_ek/pin_configurations.csv</itemPath>
-      <itemPath>mcan_fd_operation_interrupt_timestamp_sam_rh707_ek.mc3</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript" displayName="Linker Files" projectFiles="true">
       <itemPath>../src/config/sam_rh707_ek/ATSAMRH707F18A.ld</itemPath>
@@ -205,7 +215,7 @@
         <targetPluginBoard/>
         <platformTool>pkob4hybrid</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.45</languageToolchainVersion>
+        <languageToolchainVersion>4.60</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
